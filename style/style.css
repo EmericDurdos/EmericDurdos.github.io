@@ -10,8 +10,8 @@ body {
 }
 
 html {
-	/*font-size: 10px;
-     px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
+	font-size: 1em;
+     /*px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
 	/*  font-family: 'MedievalSharp', cursive;*/
 	/* cela devrait être le reste du résultat obtenu à partir de Google fonts */
 	color: #323232;
@@ -129,8 +129,7 @@ section {
 .comp {
 
 	width: 40%;
-	position: absolute;
-	margin-left: 10%;
+	min-width: 450px;
 }
 
 .comp article,
@@ -150,10 +149,8 @@ section {
 
 .xp {
 	/*Location*/
-	padding-left: 50%;
 	width: 40%;
-	position: absolute;
-	margin-right: 10%;
+	min-width: 450px;
 	/*Padding*/
 	/*Border*/
 	/*Font definition*/
@@ -206,18 +203,47 @@ h4 + dl {
 	text-align: left;
 }
 
-details dt, details dd {
+details dt,
+details dd {
 	margin-left: 5%;
 	text-align: left;
 }
-dd 
-{
+
+dd {
 	text-indent: 5%;
 }
-details dt 
-{
+
+details dt {
 	color: #323232;
 }
+
 dt img {
 	width: 32px;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+    align-items: stretch;
+	flex-direction: row-reverse;
+
+}
+
+
+@media (max-width:450px) 
+{
+	html 
+	{
+		font-size: 0.8em;
+	}
+	.xp {
+		width: 80%;
+		min-width: 0;
+	}
+
+	.comp {
+		width: 80%;
+		min-width: 0;
+	}
 }
