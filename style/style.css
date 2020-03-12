@@ -6,12 +6,13 @@
 
 body {
 	/*background-color: #323232;
+	
     border: 30px solid #323232;*/
 }
 
 html {
 	font-size: 1em;
-     /*px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
+	/*px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
 	/*  font-family: 'MedievalSharp', cursive;*/
 	/* cela devrait être le reste du résultat obtenu à partir de Google fonts */
 	color: #323232;
@@ -139,13 +140,14 @@ section {
 }
 
 .contact {
-		{
-		background-color: #838096;
-		padding: 15px;
-		color: white;
-		text-transform: uppercase;
-	}
+
+	background-color: #838096;
+	padding: 15px;
+	color: white;
+	text-transform: uppercase;
+
 }
+
 
 .xp {
 	/*Location*/
@@ -191,6 +193,7 @@ summary > .titre-details {
 	top: 0;
 	left: 0;
 	z-index: -1;
+
 }
 
 #skills {
@@ -225,18 +228,17 @@ main {
 	display: flex;
 	flex-wrap: wrap-reverse;
 	justify-content: center;
-    align-items: stretch;
+	align-items: stretch;
 	flex-direction: row-reverse;
 
 }
 
 
-@media (max-width:450px) 
-{
-	html 
-	{
+@media (max-width:450px) {
+	html {
 		font-size: 0.8em;
 	}
+
 	.xp {
 		width: 80%;
 		min-width: 0;
@@ -246,4 +248,19 @@ main {
 		width: 80%;
 		min-width: 0;
 	}
+}
+
+.bakcground-couleur {
+	top: 0;
+	left: 0;
+	background-color: #f9ffff;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: fixed;
+	z-index: -10;
+}
+table {padding-left: 1.1em;}
+table i {
+	padding-left: 1em; 
 }
