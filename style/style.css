@@ -42,29 +42,20 @@ li {
 }
 
 h1 {
-	display: flex;
     /* width: fit-content; */
-    width: fit-content;
     /* margin: auto 20px; */
     justify-content: right;
-    align-items: space-around;
     align-content: space-around;
-    border: 1px solid red;
     font-size: 4.25em;
     text-align: right;
-    align-self: right;
     color: #93D9C2;
 }
 
 h2 {
-	display: flex;
-    width: fit-content;
     margin-right: 20px;
     justify-content: center;
-    align-items: space-around;
     align-content: space-around;
     text-align: right;
-    border: 1px solid red;
     height: fit-content;
 	/*padding-right: 10%;
 	padding-bottom: 7%;
@@ -90,7 +81,7 @@ a {
 }
 
 header {
-	margin-top: 10%;
+	margin-top: 25%;
     top: 0;
     /* padding: inherit; */
     display: flex;
@@ -278,6 +269,7 @@ main {
     z-index: -10;
     background-image: url(../image/picture2.jpg);
     background-size: cover;
+	background-position: center;
 }
 }
 
