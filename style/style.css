@@ -3,13 +3,7 @@
 /*Border*/
 /*Font definition*/
 /*Animation*/
-
-body {
-	/*background-color: #323232;
-	
-    border: 30px solid #323232;*/
-}
-
+/*//////////////////////////////////////////////////////////////////////BASE///////////////////////////////////////////////////////////////////////*/
 html {
 	font-size: 1em;
 	/*px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
@@ -19,7 +13,12 @@ html {
 	background-color: white;
 	font-family: 'Montserrat', sans-serif;
 }
-
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+}
 p,
 ul,
 dl,
@@ -94,7 +93,6 @@ header {
     justify-content: right;
 }
 
-}
 
 img[src] {
 	align-content: center;
@@ -102,24 +100,6 @@ img[src] {
 
 a:hover {
 	color: #47d1d4;
-}
-
-button {
-	background-color: brown;
-	color: white;
-	padding: 6px;
-	float: : left;
-	border: 2px solid black;
-	width: 100%;
-	transition-duration: 0.4s;
-}
-
-button:hover {
-	background-color: white;
-	color: red;
-	padding: 6px;
-	width: 100%;
-	border: 2px solid white;
 }
 
 article {
@@ -216,7 +196,7 @@ summary > .titre-details {
 	z-index: -1;
 }
 
-#skills {
+.skills {
 	margin-top: 1.25em;
 }
 
@@ -271,7 +251,7 @@ main {
     background-size: cover;
 	background-position: center;
 }
-}
+
 
 table {
 	padding-left: 1.1em;
@@ -280,12 +260,48 @@ table {
 table i {
 	padding-left: 1em;
 }
+/*////////////////////////////////////////////////////BUTTONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+button {
 
+	color: black;
+	margin: 3px;
+	border: 1px solid black;
+	flex-basis: 50px;
+	height: 34px;
+	transition-duration: 0.4s;
+}
+
+button:hover {
+
+	color: white;
+	margin: 3px;
+	flex-basis: 50px;
+	height: 34px;
+	border: 1px solid white;
+}
+
+#FRbtn
+{
+	background-image: url(../image/FR.png);
+	background-position: center;
+	background-size: cover;
+}
+
+#ENbtn
+{
+	background-image: url(../image/EN.png);
+	background-position: center;
+	background-size: cover;
+}
+/*//////////////////////////////////////////////////MEDIAS QUERY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 @media (max-width:450px) {
 	html {
 		font-size: 0.8em;
 	}
-
+	.Langue 
+	{
+		margin-top: 300px;;
+	}
 	.xp {
 		width: 80%;
 		min-width: 0;
@@ -295,5 +311,23 @@ table i {
 		width: 80%;
 		min-width: 0;
 	}
-	h1 {font-size: 3em;}
+	h1 {font-size: 3em;
+	align-self: center;}
+	h2 {color: white;
+	align-self: center;}
+
+	button {
+
+		margin: 3px;
+		flex-basis: 25px;
+		height: 17px;
+	}
+	
+	button:hover {
+	
+		margin: 3px;
+		flex-basis: 25px;
+		height: 17px;
+	}
+	
 }
