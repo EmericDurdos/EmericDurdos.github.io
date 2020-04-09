@@ -34,6 +34,7 @@ details {
 
 summary {
 	color: #323232;
+	cursor: pointer;
 }
 
 li {
@@ -47,7 +48,8 @@ h1 {
     align-content: space-around;
     font-size: 4.25em;
     text-align: right;
-    color: #93D9C2;
+	color: #93D9C2;
+	margin-right: 13%;
 }
 
 h2 {
@@ -55,7 +57,8 @@ h2 {
     justify-content: center;
     align-content: space-around;
     text-align: right;
-    height: fit-content;
+	height: fit-content;
+	margin-right: 13%;
 	/*padding-right: 10%;
 	padding-bottom: 7%;
 	right: 20%;*/
@@ -63,7 +66,9 @@ h2 {
 }
 
 h4 {
-	background-color: #838096;
+	/*background-color: #838096;*/
+	background: rgb(131,128,150);
+	background: linear-gradient(90deg, rgba(116,111,145,1) 0%, rgba(131,128,150,1) 100%);
 	padding: 15px;
 	color: white;
 	text-transform: uppercase;
@@ -80,7 +85,7 @@ a {
 }
 
 header {
-	margin-top: 25%;
+	margin-top: 200px;
     top: 0;
     /* padding: inherit; */
     display: flex;
@@ -90,7 +95,7 @@ header {
     border-color: aqua;
     align-content: right;
     flex-flow: column;
-    justify-content: right;
+    justify-content: space-around;
 }
 
 
@@ -103,9 +108,9 @@ a:hover {
 }
 
 article {
-	background-color: #D8E4FA;
-	/*padding: 15px;*/
-	padding-bottom: 4%;
+	/*background-color: #D8E4FA;*/
+	background: rgb(210,224,251);
+	background: linear-gradient(300deg, rgba(210,224,251,1) 0%, rgba(216,228,250,1) 22%, rgba(249,251,255,1) 100%);	padding-bottom: 4%;
 	margin: 0 5%;
 	width: 90%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -202,8 +207,12 @@ summary > .titre-details {
 
 p,
 h4 + dl {
-	margin-left: 5%;
+	margin-left: 1em;
 	text-align: left;
+}
+address{
+
+	font-style: normal;
 }
 
 details dt,
@@ -230,6 +239,7 @@ main {
 	justify-content: center;
 	align-items: stretch;
 	flex-direction: row-reverse;
+	margin-bottom: 15%;
 
 }
 
@@ -254,11 +264,22 @@ main {
 
 
 table {
-	padding-left: 1.1em;
+	padding-left: 0.6em;
+	border-spacing: 1em;
 }
 
 table i {
-	padding-left: 1em;
+	padding-left: 0.5em;
+}
+table p {
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+table a {
+	padding: 0;
+	margin: 0;
+	line-height: 0;
 }
 /*////////////////////////////////////////////////////BUTTONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 button {
@@ -300,15 +321,11 @@ button:hover {
 	}
 	.Langue 
 	{
-		margin-top: 300px;;
+		margin-top: 200px;;
 	}
-	.xp {
-		width: 80%;
-		min-width: 0;
-	}
-
-	.comp {
-		width: 80%;
+	.xp, .comp 
+	{
+		width: 92%;
 		min-width: 0;
 	}
 	h1 {font-size: 3em;
@@ -328,6 +345,21 @@ button:hover {
 		margin: 3px;
 		flex-basis: 25px;
 		height: 17px;
+	}
+
+	main 
+	{
+		margin-bottom: 20%;
+	}
+	header 
+	{
+
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	table {
+		padding-left: 0;
+		border-spacing: 0.1em 1em;
 	}
 	
 }
