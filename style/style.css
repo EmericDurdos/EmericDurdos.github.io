@@ -13,6 +13,18 @@ html {
 	background-color: white;
 	font-family: 'Montserrat', sans-serif;
 }
+footer 
+{
+	background-color: rgba(116, 111, 145, 0.5);
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0.15em;
+	bottom: 0;
+	margin: 0 -2.5%;
+	width: 105%;
+	font-size: 2em;
+
+}
 nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -247,7 +259,7 @@ main {
 	margin-top: 0;
 }
 
-.bakcground-couleur {
+.background-couleur {
 	background-attachment: fixed;
     top: 0;
     left: 0;
@@ -260,6 +272,10 @@ main {
     background-image: url(../image/picture2.jpg);
     background-size: cover;
 	background-position: center;
+}
+footer a {
+	text-align: center;
+	color: white;
 }
 /*/////////////////////////////////////////////////TABLE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
