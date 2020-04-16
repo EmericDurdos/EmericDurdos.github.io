@@ -31,14 +31,7 @@ nav {
 	flex-direction: row;
 	justify-content: flex-start;
 }
-p,
-ul,
-dl,
-a,
-ol
-	{
-	/*padding: 0 1.5em;*/
-}
+
 
 details {
 	color: #79768c;
@@ -53,10 +46,12 @@ summary {
 	margin-bottom : 0.4em;
 }
 
-li {
-	padding: 0 20px 0 0;
+ul li {
+	padding: 1em 1em;
 }
-
+ol details {
+	padding: .5em .5em;
+}
 h1 {
     /* width: fit-content; */
     /* margin: auto 20px; */
@@ -171,7 +166,7 @@ section {
 }
 
 article ol {
-	padding-left: 25%;
+	padding-left: 4em;
 }
 
 .padded-details summary {
@@ -211,18 +206,23 @@ address{
 	font-style: normal;
 }
 
-details dt,
-details dd {
-	margin-left: 5%;
+details dt
+{
+	margin: auto 5%;
 	text-align: left;
+	color: #323232;
+}
+
+details dd 
+{
+	margin: auto 5%;
+	text-align: left;
+	margin-bottom: 1em;
+	text-align: justify;
 }
 
 dd {
 	text-indent: 5%;
-}
-
-details dt {
-	color: #323232;
 }
 
 dt img {
@@ -282,6 +282,28 @@ table a {
 	line-height: 0;
 }
 tr>td
+{
+	text-align: center;
+}
+details table
+{
+	padding-left: 2em;
+	border-spacing: 0.2em;
+	margin-right : 0;
+	
+}
+
+details table td
+{
+	text-align: left;
+	padding-right: 0;
+	
+}
+details table dt
+{
+	text-indent: 0;
+}
+details table img
 {
 	text-align: center;
 }
@@ -361,9 +383,23 @@ button:hover {
 		justify-content: space-evenly;
 		align-items: center;
 	}
-	table {
+	table 
+	{
 		padding-left: 0;
 		border-spacing: 0.1em 1em;
+	}
+	details table
+	{
+		padding-left: 1em;
+		border-spacing: 0.1em;
+		margin-right : 0;
+		
+	}
+	details table img
+	{
+		width: 25px;
+		text-align: right;
+		
 	}
 	
 }
