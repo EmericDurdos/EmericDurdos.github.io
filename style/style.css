@@ -272,6 +272,7 @@ main {
     background-size: cover;
 	background-position: center;
 }
+
 footer a {
 	text-align: center;
 	color: white;
@@ -348,7 +349,7 @@ button:hover {
 	height: 34px;
 	border: 1px solid white;
 }
-
+/*/////////////////////////////////////////////////ID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 #FRbtn
 {
 	background-image: url(../image/FR.png);
