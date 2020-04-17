@@ -10,9 +10,6 @@
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 html {
 	font-size: 1em;
-	/*px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
-	/*  font-family: 'MedievalSharp', cursive;*/
-	/* cela devrait être le reste du résultat obtenu à partir de Google fonts */
 	color: #323232;
 	background-color: white;
 	font-family: 'Montserrat', sans-serif;
@@ -80,9 +77,6 @@ h2
     text-align: right;
 	height: fit-content;
 	margin-right: 13%;
-	/*padding-right: 10%;
-	padding-bottom: 7%;
-	right: 20%;*/
 
 }
 
@@ -114,7 +108,7 @@ header {
     height: fit-content;
     border-bottom-width: 5px;
     border-color: aqua;
-    align-content: right;
+    align-content: flex-end;
     flex-flow: column;
     justify-content: space-around;
 }
